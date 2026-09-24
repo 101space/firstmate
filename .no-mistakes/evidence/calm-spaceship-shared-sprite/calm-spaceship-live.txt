@@ -1,0 +1,14 @@
+[1] Pi overlay frames byte-equal to shared sprite core (harness-neutral): true
+[2] idle frame (rows):
+    (|).  .  .  .  .  .  .  .  .  .  .  .  .  . 
+    |^|.*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .
+    saucer rendered: true  hull rendered: true
+[3] idle starfield streams left (phase+1 slides field): 37 columns matched the one-column-left slide
+[4] working frame (single row):
+    =( * ).- -.- -.- -.- -.- -.- -.- -.- -.- -.-
+    compact =( * ) warp saucer present: true  rows: 1
+[5] working field parity: phase stayed even (anyOdd=false), reached exactly {0,2} over 200 ticks
+    field toggles in place after one non-movement tick (glyph c<-c+2): 35 columns matched
+    working saucer position stayed put through non-movement ticks (no left drift): pos0=0 posNow=0
+    working saucer swept right while thinking: warp span cruise wraps (see position 0)
+[6] working saucer cruises right continuously (wrap marquee): visited 38 distinct columns over 400 ticks
