@@ -1,0 +1,42 @@
+fm-gate-refuse: gate agent lifecycle permitted only against lab home /tmp/fm-lab.gODyuX
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no watcher has a fresh beacon (last beat: never, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the requested message WILL still be sent.
+●  repair a missing or failed watcher cycle with the Pi tool fm_watch_arm_pi, or restart Pi with -e {run-worktree}/.pi/extensions/fm-primary-turnend-guard.ts -e {run-worktree}/.pi/extensions/fm-primary-pi-watch.ts if the extensions are not loaded.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+fm-send: doorbell did not reach fmlab:second; the steer is durably recorded at /tmp/fm-lab.gODyuX/state/second.inbox/001.msg and the watcher will re-ring
+rc=0
+pending-reply ids: 4888978e8be38a98 
+inbox record: schema=fm-task-inbox.v1
+at=2026-11-26T20:25:49Z
+body-terminator=1
+pending record body:
+    schema=fm-pending-reply.v1
+    corr_id=4888978e8be38a98
+    task_id=second
+    parent_home=/tmp/fm-lab.gODyuX
+    parent_status=/tmp/fm-lab.gODyuX/state/second.status
+    parent_status_scan_signature=
+    request_summary=please check the build when you get a chance
+    created_epoch=1795724749
+    phase=awaiting_report
+    turn_seen_busy=0
+    request_turn_completed_epoch=
+    recovery_attempted_epoch=
+    recovery_sender_pid=
+    recovery_sender_identity=
+    recovery_sent_epoch=
+    recovery_delivery_outcome=
+    recovery_turn_seen_busy=0
+    recovery_turn_completed_epoch=
+    escalated_epoch=
+    resolved_epoch=
+    resolved_via=
+    wrong_home_hits=0
+    wrong_home_first_sighting=
+    wrong_home_sightings=
+    wrong_home_scan_signature=
+    grace_secs=120
+    delivered_epoch=1795724750

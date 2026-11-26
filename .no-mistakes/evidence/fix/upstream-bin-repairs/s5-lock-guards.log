@@ -1,0 +1,13 @@
+### (a) control lock held, FM_MERGE_HOLDS_CONTROL_LOCK unset
+rc=1
+error: local-only done head could not be recorded or differs from the recorded head; revised work requires a new task/approval record
+local_done_head lines: 0
+### (b) metadata lock held, FM_MERGE_HOLDS_CONTROL_LOCK=1
+lock=/tmp/fm-lab.PA6Yt5/state/.meta-localtask.lock
+rc=1
+error: local-only done head could not be recorded or differs from the recorded head; revised work requires a new task/approval record
+local_done_head lines: 0
+### (c) locks free, FM_MERGE_HOLDS_CONTROL_LOCK=1
+rc=0
+armed: state/localtask.check.sh
+local_done_head lines: 1 value matches worker HEAD: yes

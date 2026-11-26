@@ -1,0 +1,18 @@
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+●  WATCHER DOWN - SUPERVISION IS OFF
+●  1 task(s) in flight, but no watcher has a fresh beacon (last beat: never, grace 300s).
+●  Trust the emitted supervision protocol for this harness; do not use shell & for watcher repair.
+●  This is a supervision warning only; the guarded operation WILL still run.
+●  repair a missing or failed watcher cycle with the Pi tool fm_watch_arm_pi, or restart Pi with -e /tmp/fm-base-661507/.pi/extensions/fm-primary-turnend-guard.ts -e /tmp/fm-base-661507/.pi/extensions/fm-primary-pi-watch.ts if the extensions are not loaded.
+●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+error: local-only done head could not be recorded or differs from the recorded head; revised work requires a new task/approval record
+rc=1
+
+=== task metadata after the merge run ===
+kind=ship
+mode=local-only
+branch=fm/localtask
+project=/tmp/fm-lab.lqwGOG/proj
+worktree=/tmp/fm-lab.lqwGOG/wt
+spawn_gen=fixture-1
+local_done_head lines: 0

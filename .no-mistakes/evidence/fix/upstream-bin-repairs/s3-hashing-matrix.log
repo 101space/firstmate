@@ -1,0 +1,35 @@
+### C. hashing-tool matrix, library entrypoint run under set -u as bin/fm-send.sh runs it
+
+-- repaired lib; PATH has sha256sum, no shasum, no openssl
+id=<3f35cedbdb944643>
+create_rc=0
+create_stdout=<05811dc07c9c3bac>
+stderr=
+pending_records=1
+
+-- repaired lib; PATH has no openssl, no shasum, no sha256sum
+id=<>
+create_rc=1
+create_stdout=<>
+stderr=
+pending_records=0
+
+-- base lib (4ffd3495); PATH has shasum, no openssl
+
+pending_records=0
+
+-- repaired lib; PATH has shasum, no openssl
+id=<60c388e6bb9b69e1>
+create_rc=0
+create_stdout=<cdb724e3006e2af6>
+stderr=
+pending_records=1
+
+### base lib, set -u, PATH has shasum but no openssl: direct call
+/tmp/fm-base-g/bin/fm-pending-reply-lib.sh: line 180: raw: unbound variable
+id=<>
+rc=0
+
+### repaired lib, set -u, PATH has shasum but no openssl: direct call
+id=<0d40ad31a6484d55>
+rc=0
