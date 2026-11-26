@@ -1,0 +1,63 @@
+== (a) --setup with curl absent from PATH and no model yet ==
+fm-speak.sh: error: curl is needed to download the Kokoro model and voice pack and is not on PATH (install it with your package manager, for example apt install curl or brew install curl)
+rc=1
+cache contents after refusing:
+  (end)
+
+== (b) --setup with python3 absent and no venv ==
+kokoro cache: /tmp/fm-lab.O022j1/nopy3
+cxx-runtime: /nix/store/0iv8glcslgfcgn371lbjr5jjw5a6cqir-gcc-15.3.0-lib/lib
+fm-speak.sh: error: python3 is needed to build the Kokoro venv and is not on PATH (install python3 3.10 to 3.13 and its venv module with your package manager, for example apt install python3 python3-venv or brew install python)
+rc=1
+venv created despite refusal?
+  no
+
+== (c) --setup with packages installed but unimportable (C++ runtime cause) ==
+kokoro cache: /tmp/fm-lab.O022j1/broken
+cxx-runtime: /nix/store/0iv8glcslgfcgn371lbjr5jjw5a6cqir-gcc-15.3.0-lib/lib
+fm-speak.sh: error: python3 is needed to build the Kokoro venv and is not on PATH (install python3 3.10 to 3.13 and its venv module with your package manager, for example apt install python3 python3-venv or brew install python)
+rc=1
+venv deleted by setup?
+  no, venv left in place
+
+== (c2) same broken runtime on a render ==
+./bin/fm-speak.sh: line 427: awk: command not found
+fm-speak.sh: error: --speed must be between 0.5 and 2.0 (got: 1.0)
+rc=1
+no output dir created
+
+== (d) --setup re-run on a complete, working cache ==
+kokoro cache: /tmp/fm-lab.O022j1/kokoro
+cxx-runtime: /nix/store/0iv8glcslgfcgn371lbjr5jjw5a6cqir-gcc-15.3.0-lib/lib
+venv: present
+model: present
+voices: present
+default-voice: af_heart
+done: /tmp/fm-lab.O022j1/kokoro
+rc=0
+cache entries before: kokoro-v1.0.onnx venv voices-v1.0.bin 
+cache entries after:  kokoro-v1.0.onnx venv voices-v1.0.bin 
+== (c) --setup with packages installed but unimportable (C++ runtime cause) ==
+kokoro cache: /tmp/fm-lab.O022j1/broken
+cxx-runtime: /nix/store/0iv8glcslgfcgn371lbjr5jjw5a6cqir-gcc-15.3.0-lib/lib
+fm-speak.sh: error: the python packages in /tmp/fm-lab.O022j1/broken/venv are installed, but the C++ runtime at /nix/store/0iv8glcslgfcgn371lbjr5jjw5a6cqir-gcc-15.3.0-lib/lib cannot be loaded or is too old for onnxruntime; install a newer C++ runtime (for example nix build nixpkgs#gcc.cc.lib on NixOS) or set LD_LIBRARY_PATH
+rc=1
+venv deleted by setup?
+  no, venv left in place
+
+== (c2) same broken runtime on a render (normal PATH) ==
+fm-speak.sh: error: the python packages in /tmp/fm-lab.O022j1/broken/venv are installed, but the C++ runtime at /nix/store/0iv8glcslgfcgn371lbjr5jjw5a6cqir-gcc-15.3.0-lib/lib cannot be loaded or is too old for onnxruntime; install a newer C++ runtime (for example nix build nixpkgs#gcc.cc.lib on NixOS) or set LD_LIBRARY_PATH
+rc=1
+no output dir created
+
+== (d) --setup re-run on a complete, working cache ==
+kokoro cache: /tmp/fm-lab.O022j1/kokoro
+cxx-runtime: /nix/store/0iv8glcslgfcgn371lbjr5jjw5a6cqir-gcc-15.3.0-lib/lib
+venv: present
+model: present
+voices: present
+default-voice: af_heart
+done: /tmp/fm-lab.O022j1/kokoro
+rc=0
+cache entries before: kokoro-v1.0.onnx venv voices-v1.0.bin 
+cache entries after:  kokoro-v1.0.onnx venv voices-v1.0.bin 

@@ -1,0 +1,23 @@
+== --help (flags offered) ==
+Usage:
+  fm-speak.sh <input.md|txt> [--out <dir>] [--title <t>]
+              [--max-minutes <n>] [--voice <id>] [--speed <n>]
+              [--print-text]
+  fm-speak.sh --setup
+  fm-speak.sh --help
+
+OUTPUT NAMING. Every render is named `YYYY-MM-DD-<slug>.mp3`, where the slug
+comes from --title or from the input filename, and a same-day collision gets a
+counter suffix rather than overwriting the earlier briefing. Re-running into a
+fixed file name is deliberately out of scope, so a render never overwrites or
+--print-text writes the cleaned speakable prose to stdout in place of the
+rc=0
+
+== refused --name ==
+fm-speak.sh: error: unknown option: --name (try --help)
+rc=1
+no output dir created
+
+== transliteration of accents and emoji ==
+Cafe Muller's naive summary :-D - done to next.
+rc=0

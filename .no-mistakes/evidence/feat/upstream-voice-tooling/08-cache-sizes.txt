@@ -1,0 +1,4 @@
+== doc-listed cache sizes vs real cache ==
+venv: 188576909 bytes
+kokoro-v1.0.onnx: 325532387 bytes
+voices-v1.0.bin: 28214398 bytes

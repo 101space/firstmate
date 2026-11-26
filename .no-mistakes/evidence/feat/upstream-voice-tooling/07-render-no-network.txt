@@ -1,0 +1,15 @@
+== render under strace, all connect()/socket() calls recorded ==
+file: /tmp/fm-lab.O022j1/offline-out/2026-11-26-offline.mp3
+duration: 0:04
+size: 34107
+index: /tmp/fm-lab.O022j1/offline-out/index.md
+engine: kokoro
+voice: af_heart
+speed: 1.0
+total: 0:04
+rc=0
+
+== every AF_INET/AF_INET6 connect in the whole render ==
+(none: no IP socket or connection was made)
+
+== socket families used ==

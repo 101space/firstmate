@@ -1,0 +1,29 @@
+== dropbox refusal (render) ==
+fm-speak.sh: error: refusing to write into a Dropbox folder: /tmp/fm-lab.O022j1/Dropbox/audio
+Rendered audio stays on this machine. Move a file yourself if you want it elsewhere.
+rc=1
+no dropbox dir created
+
+== dropbox path is fine for --print-text (writes nothing) ==
+One line.
+rc=0
+no dropbox dir created
+
+== --max-minutes 010 (leading zero is decimal ten, not octal) ==
+One line.
+rc=0
+== --max-minutes 0 ==
+fm-speak.sh: error: --max-minutes needs at least 1 minute
+rc=1
+== --max-minutes abc ==
+fm-speak.sh: error: --max-minutes needs a whole number of minutes (got: abc)
+rc=1
+== --speed 3 ==
+fm-speak.sh: error: --speed must be between 0.5 and 2.0 (got: 3)
+rc=1
+
+== missing input / empty input ==
+fm-speak.sh: error: input file does not exist: /tmp/fm-lab.O022j1/nope.md
+rc=1
+fm-speak.sh: error: input file is empty: /tmp/fm-lab.O022j1/empty.md
+rc=1

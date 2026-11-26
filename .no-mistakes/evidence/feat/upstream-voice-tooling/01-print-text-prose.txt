@@ -1,0 +1,59 @@
+=== input file (speakable-prose.md) ===
+---
+title: internal front matter
+tags: [a, b]
+---
+
+# Release review
+
+Some *emphasis* and **bold** text, plus nested *see **this** note* and _a __b__ c_ markers.
+
+- bullet item one
+1. numbered item two
+
+| Col | Val |
+| --- | --- |
+| one | 1 |
+
+> quoted line here
+
+```sh
+echo this code must not be spoken
+```
+
+Only split when x < 10 and y > 5 here.
+Run `cmd <in >out` to convert the file.
+Use <b>bold html</b> sparingly.
+
+Visit https://example.com/page for details.
+Use e.g. this, i.e. that, etc. and approx. 5 items.
+Compare vs. the old one.
+Trailing vs.
+Adjacent approx.approx. test and e.g.e.g. too.
+Costs 50% of the total & more.
+
+=== $ bin/fm-speak.sh speakable-prose.md --print-text ===
+Release review.
+Some emphasis and bold text, plus nested see this note and a b c markers.
+bullet item one
+numbered item two
+quoted line here
+Only split when x < 10 and y > 5 here.
+Run cmd <in >out to convert the file.
+Use bold html sparingly.
+Visit for details.
+Use for example, this, that is, that, et cetera, and approximately 5 items.
+Compare versus the old one.
+Trailing versus.
+Adjacent approximately approximately test and for example, for example, too.
+Costs 50 percent of the total and more.
+rc=0
+
+=== non-ASCII input: accents, curly quotes, emoji, arrow ===
+Café Müller’s naïve summary 😀 — done → next.
+--- $ --print-text ---
+Cafe Muller's naive summary :-D - done to next.
+rc=0
+
+=== ASCII-only check on the printed prose ===
+no non-ASCII byte in the spoken text
