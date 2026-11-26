@@ -1,0 +1,21 @@
+{
+  "tag": "spaceship",
+  "prompt": "Run this exact bash command with the bash tool: sleep 3 . When it finishes, reply with exactly LIVE_SETTLE_MARKER and nothing else.",
+  "idle": {
+    "saucer": false,
+    "boat": false
+  },
+  "run": {
+    "saucer_seen": true,
+    "boat_seen": false,
+    "marker_seen_at": null,
+    "samples": 63,
+    "action": null,
+    "action_at": null
+  },
+  "settle": {
+    "saucer": false,
+    "boat": false,
+    "marker": true
+  }
+}

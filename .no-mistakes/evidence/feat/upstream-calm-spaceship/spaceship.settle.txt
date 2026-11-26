@@ -1,0 +1,40 @@
+
+ Run this exact bash command with the bash tool: sleep 3 . When it finishes, reply with exactly LIVE_SETTLE_MARKER and
+ nothing else.
+
+
+ LIVE_SETTLE_MARKER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+/tmp/fm-calm-live.D5BT1D/project
+↑5.0k ↓98 1.3%/200k (auto)                                                                         openrouter/free • low
