@@ -1,0 +1,23 @@
+{
+  "steps": [
+    {
+      "name": "idle_no_spaceship_banner",
+      "has_saucer": false,
+      "has_hull": false,
+      "has_stock_working": false
+    },
+    {
+      "name": "boat_during_run",
+      "has_boat": true,
+      "has_saucer": false,
+      "has_warp": false,
+      "has_stock_working": false
+    },
+    {
+      "name": "boat_settled",
+      "response": true,
+      "has_boat": false,
+      "has_saucer": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "steps": [
+    {
+      "name": "calm_off_spaceship_selected_idle",
+      "has_saucer": false,
+      "has_hull": false,
+      "has_stock_working": false
+    },
+    {
+      "name": "calm_off_spaceship_selected_run",
+      "has_stock_working": true,
+      "has_saucer": false,
+      "has_warp": false,
+      "has_hull": false
+    }
+  ]
+}

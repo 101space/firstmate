@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "name": "idle_banner",
+      "has_saucer": true,
+      "has_hull": true,
+      "has_stock_working": false
+    },
+    {
+      "name": "idle_drift",
+      "col1": 5,
+      "col2": 6,
+      "moved": true
+    },
+    {
+      "name": "warp",
+      "has_warp": true,
+      "has_saucer": false,
+      "has_stock_working": false
+    },
+    {
+      "name": "warp_motion",
+      "col1": 6,
+      "col2": 7
+    },
+    {
+      "name": "settled",
+      "response": true,
+      "has_saucer": true,
+      "has_hull": true,
+      "has_warp": false
+    },
+    {
+      "name": "calm_off",
+      "has_saucer": false,
+      "has_hull": false
+    },
+    {
+      "name": "calm_on_again",
+      "has_saucer": true,
+      "has_hull": true
+    }
+  ]
+}
