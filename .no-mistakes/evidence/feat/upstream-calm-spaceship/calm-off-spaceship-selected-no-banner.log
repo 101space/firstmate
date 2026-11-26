@@ -1,0 +1,5 @@
+# calm-off-spaceship-selected-no-banner
+# Real Pi 1.6.1 TUI: config/calm=off and config/calm-ship=spaceship; no banner may appear at any time.
+
+t=   0.3s  rendered=none       row,col=None
+# events: 7 rendered frames over 11.06s

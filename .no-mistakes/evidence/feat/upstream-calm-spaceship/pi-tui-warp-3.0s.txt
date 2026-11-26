@@ -1,0 +1,41 @@
+# captured t=3.65s markers={'(|)': (33, 2), '|^|': (34, 2)}
+
+ ▀▀█  v1.6.1
+ █▀ █ escape interrupt · ctrl+c/ctrl+d clear/exit · / commands · ! bash · ctrl+o more
+ Press ctrl+o to show full startup help and loaded resources.
+
+ Pi can explain its own features and look up its docs. Ask it how to use or extend Pi.
+
+[Extensions]
+  fm-calm.ts, lab-provider.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+. (|) .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+ .|^|.*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+/tmp/fmlab/lab1/project
+0.0%/262k (auto)                                                         (openrouter) moonshotai/kimi-k2.7-code • medium

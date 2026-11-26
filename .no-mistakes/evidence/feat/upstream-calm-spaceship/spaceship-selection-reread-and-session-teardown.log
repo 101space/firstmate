@@ -1,0 +1,14 @@
+# spaceship-selection-reread-and-session-teardown
+# Real Pi 1.6.1 TUI: calm-ship=yacht (banner must be absent), rewritten to "  spaceship  " then /new (banner must appear), then config/calm=off then /new (banner must be gone).
+
+t=  0.34s  rendered=none       row,col=None
+t= 11.08s  rendered=(|)        row,col=[33, 0]
+t= 12.61s  rendered=(|)        row,col=[33, 1]
+t= 14.15s  rendered=(|)        row,col=[33, 2]
+t= 15.69s  rendered=(|)        row,col=[33, 3]
+t= 17.23s  rendered=(|)        row,col=[33, 4]
+t= 18.77s  rendered=(|)        row,col=[33, 5]
+t= 20.32s  rendered=(|)        row,col=[33, 6]
+t= 21.86s  rendered=(|)        row,col=[33, 7]
+t= 21.86s  rendered=none       row,col=None
+# events: 67 rendered frames over 32.06s
