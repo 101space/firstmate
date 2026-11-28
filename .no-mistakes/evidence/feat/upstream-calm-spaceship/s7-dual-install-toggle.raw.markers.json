@@ -1,0 +1,17 @@
+[
+ {
+  "at": 6.0,
+  "offset": 13787,
+  "action": "prompt"
+ },
+ {
+  "at": 35.0,
+  "offset": 24828,
+  "action": "calm-off"
+ },
+ {
+  "at": 41.001,
+  "offset": 26251,
+  "action": "calm-on"
+ }
+]

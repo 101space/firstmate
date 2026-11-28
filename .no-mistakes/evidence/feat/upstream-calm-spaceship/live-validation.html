@@ -1,0 +1,26 @@
+<!doctype html><meta charset='utf-8'><style>body{font-family:system-ui;margin:2rem;max-width:1100px}pre.term{background:#111;color:#e6e6e6;padding:12px;overflow:auto;font-size:12px;line-height:1.35;white-space:pre}table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid #bbb;padding:4px 10px;font-size:14px}h3{margin-bottom:.3rem}</style><h1>Calm spaceship variant - live Pi TUI evidence</h1>
+<p>Captured from a real <code>pi</code> 1.6.1 TUI driven through a pty (120x40) in a throwaway FM_HOME, with <code>.pi/extensions/fm-calm.ts</code> loaded. Sprite fragments are exactly what the terminal received.</p>
+<h2>Captured terminal frames</h2>
+<h3>spaceship variant, idle: two-row saucer over hull, drifting</h3><pre class='term'>~/.no-mistakes/worktrees/f82d8fd6ce1f/01M8FQVAV38BSC3NHD2CSGTB2M (detached)
+0.0%/272k (auto)                                                                deepseek/deepseek-v4.1-flash-1017 • high(|).  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+|^|.*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .</pre>
+<h3>spaceship variant, agent run under way: single-row warp saucer</h3><pre class='term'> -.- -.=( * )-.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.- -.-</pre>
+<h3>spaceship variant, after settle: back to the ambient two-row drift</h3><pre class='term'> .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*.|^|. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*..*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. |^| .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  (|).  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+.*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .|^|.*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. *. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*|^|*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. ..  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .(|)  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*.|^|. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. |^| .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*. .*</pre>
+<h3>default (no config/calm-ship), agent run under way: the boat</h3><pre class='term'>
+ ◿│◣
+╲▁▁▁╱▁▁▁▁▁▂▂▃▃▃▄▄▄▄▄▃▃▃▂▂▁▁▁▁▁▁▂▂▂▃▃▃▄▄▄▄▄▄▄▃▃▃▂▂▁▁▁▁▁▁▂▂▂▃▃▃▄▄▄▄▄▃▃▃▂▂▂▁▁▁▁▁▁▂▂▃▃▃▄▄▄▄▄▄▃▃▂▂▁▁▁▁▁▁▂▂▃▃▃▄▄▄▄▄▄▄▃▃▃▂▂▁▁▁▁</pre>
+<h2>Calm toggle with config/calm-ship=spaceship</h2><table><tr><th>segment</th><th>saucer (|)</th><th>hull |^|</th><th>warp =( * )</th></tr>
+<tr><td>before /calm off</td><td>5</td><td>9</td><td>0</td><td>0</td></tr>
+<tr><td>between /calm off and on</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>after /calm on</td><td>7</td><td>12</td><td>0</td><td>0</td></tr>
+</table>
+<h2>Dual install: synthetic standalone boat claims the shared slot</h2><table><tr><th>segment</th><th>saucer (|)</th><th>hull |^|</th><th>warp =( * )</th><th>STANDALONE-BOAT-ACTIVE</th></tr>
+<tr><td>idle before prompt</td><td>5</td><td>9</td><td>0</td><td>0</td></tr>
+<tr><td>run (standalone peer owns slot)</td><td>0</td><td>0</td><td>0</td><td>4</td></tr>
+<tr><td>between /calm off and on</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>after /calm on</td><td>14</td><td>26</td><td>0</td><td>0</td></tr>
+</table>
+<h2>Other live checks</h2><ul><li>Absent <code>config/calm-ship</code>: 0 saucer frames while idle, 25 boat sail frames during the run, none after settle (s2-default-boat.raw).</li><li><code>config/calm-ship=SPACESHIP</code>: 0 saucer frames (s4a-garbage-variant.raw).</li><li><code>FM_CONFIG_OVERRIDE</code> pointing at a dir with calm-ship=spaceship: 8 saucer frames (s4b-config-override.raw).</li><li>GNU bash 3.2.57 <code>-n</code>: 0 failures over 616 canonical files; the pre-fix test file fails at line 5518 (s5-bash32-full-sweep.log).</li><li>Focused Calm suite: 13 ok, 0 not ok, 4 environment skips (s6-calm-pi-extension-suite.log).</li></ul>
+<p>Raw pty transcripts: s1-spaceship-toggle-run.raw, s2-default-boat.raw, s3-calm-toggle.raw, s4a-garbage-variant.raw, s4b-config-override.raw, s7-dual-install-toggle.raw.</p>

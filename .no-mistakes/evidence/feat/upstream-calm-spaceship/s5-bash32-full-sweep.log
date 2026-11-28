@@ -1,0 +1,9 @@
+GNU bash 3.2.57 -n parse sweep over full canonical set (616 files)
+failures=0
+
+Current head tests/fm-calm-pi-extension.test.sh:
+  parse OK (rc=0)
+Pre-fix 42b4927e copy:
+  /tmp/prefix-calm-test.sh: line 5518: unexpected EOF while looking for matching ``'
+  /tmp/prefix-calm-test.sh: line 5962: syntax error: unexpected end of file
+  rc=2
